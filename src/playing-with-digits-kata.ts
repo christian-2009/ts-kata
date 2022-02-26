@@ -18,7 +18,7 @@ function toNum(str: string): number {
 }
 
 function playingWithDigits(n: number, p: number): number {
-  let arr: number[] = n.toString().split("").map(toNum);
+  const arr: number[] = n.toString().split("").map(toNum);
 
   let finalNum = 0;
   for (let i = 0; i < arr.length; i++) {
