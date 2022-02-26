@@ -21,16 +21,15 @@ function playingWithDigits(n: number, p: number): number {
   let arr: number[] = n.toString().split("").map(toNum);
 
   let finalNum = 0;
-  for (let i=0; i<arr.length; i++) {
-    finalNum += (arr[i]) ** p;
+  for (let i = 0; i < arr.length; i++) {
+    finalNum += arr[i] ** p;
     p = p + 1;
   }
-  if (finalNum % n === 0){
-    return finalNum / n
+  if (finalNum % n === 0) {
+    return finalNum / n;
   } else {
-    return -1
+    return -1;
   }
 }
 
 export default playingWithDigits;
-
